@@ -1,4 +1,4 @@
-application: linear-rig-499
+application: linear-rig-500
 version: 1
 runtime: php
 api_version: 1
@@ -16,6 +16,9 @@ handlers:
 
 - url: /album
   script: album.html
+
+- url: /fbpage
+  script: fbpage.html
 
 - url: /.*
   script: index.html

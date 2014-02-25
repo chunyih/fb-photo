@@ -14,7 +14,7 @@ jQuery(document).ready(function($){
     getPhtotList = getPhtotList.replace(/:userid/, userID);
 
     // List all albums, only runs on home page
-    if( $("body").has("span#home").length != 0 ){
+    if( $("body").has("span#homexxxxxxxxxxxxxxxxxxxxxxxxx").length != 0 ){
       $(".mainTitle > p").text("Chunyih's Albums");
       $(".leftBtn > a").hide();
 
@@ -57,7 +57,7 @@ jQuery(document).ready(function($){
     };
 
     // List all photos in one album, only runs on album page
-    if( $("body").has("span#album").length != 0 ){
+    if( $("body").has("span#albumxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx").length != 0 ){
       var albumID      = "",
           title        = "",
           caption      = "",
@@ -101,6 +101,19 @@ jQuery(document).ready(function($){
         });
       });
     };
+
+    // only runs on fb page
+    if( $("body").has("span#fbpage").length != 0 ){
+      console.log("in fb");
+      
+
+      
+      $.getJSON( "https://graph.facebook.com/me", function(data){
+        console.log(data);
+      });
+    };
+
+
 
 });
 

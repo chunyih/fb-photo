@@ -78,6 +78,11 @@ img {
   margin: 0 auto;
 }
 
+.fb-login-button {
+  right: 30px;
+  top: 11px;
+}
+
 
 /*============
   Home Page
